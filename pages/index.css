@@ -200,7 +200,7 @@
   color: #000000;
 }
 
-.form__label--checkbox {
+.form__label_checkbox {
   flex-direction: row;
   align-items: center;
   gap: 12px;
