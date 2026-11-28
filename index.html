@@ -48,13 +48,15 @@
           alt="Ilustração isométrica do interior do café"
         />
         <div class="header__footer">
-          <p class="header__paragraph">Horários:</p>
-          <p class="header__paragraph">
-            Segunda a sexta (10:00&nbsp;–&nbsp;19:00)
-          </p>
-          <p class="header__paragraph">
-            Sábado a domingo (11:00&nbsp;-&nbsp;18:00)
-          </p>
+          <div class="header__hours">
+            <p class="header__paragraph">Horários:</p>
+            <p class="header__paragraph">
+              Segunda a sexta (10:00&nbsp;–&nbsp;19:00)
+            </p>
+            <p class="header__paragraph">
+              Sábado a domingo (11:00&nbsp;-&nbsp;18:00)
+            </p>
+          </div>
           <p class="header__paragraph">
             200 Success Avenue, a cidade de Triple Peaks
           </p>
@@ -118,6 +120,8 @@
                   type="number"
                   name="number"
                   placeholder="1-8"
+                  min="1"
+                  max="8"
                   required
                 />
               </label>
@@ -134,14 +138,6 @@
 
               <label class="form__label">
                 Seu e-mail *
-                <button class="form__button" type="submit">
-                  Reservar uma mesa
-                </button>
-
-                <label class="form__label form__label_checkbox">
-                  <input class="form__checkbox" type="checkbox" required />
-                  Eu concordo com os termos de uso
-                </label>
                 <input
                   class="form__input"
                   type="email"
@@ -149,6 +145,15 @@
                   placeholder="email@email.com"
                   required
                 />
+              </label>
+
+              <button class="form__button" type="submit">
+                Reservar uma mesa
+              </button>
+
+              <label class="form__label form__label_checkbox">
+                <input class="form__checkbox" type="checkbox" required />
+                Eu concordo com os termos de uso
               </label>
             </fieldset>
           </form>
@@ -166,20 +171,24 @@
             <h2 class="footer__social-heading">Mídia social</h2>
             <ul class="footer__list">
               <li class="footer__list-item">
-                <img
-                  class="footer__social-icon"
-                  src="./images/facebook_white.svg"
-                  alt="Ícone do Facebook"
-                />
-                <a class="footer__social-link" href="#">Facebook</a>
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/facebook_white.svg"
+                    alt="Ícone do Facebook"
+                  />
+                  Facebook
+                </a>
               </li>
               <li class="footer__list-item">
-                <img
-                  class="footer__social-icon"
-                  src="./images/instagram_white.svg"
-                  alt="Ícone do Instagram"
-                />
-                <a class="footer__social-link" href="#">Instagram</a>
+                <a class="footer__social-link" href="#">
+                  <img
+                    class="footer__social-icon"
+                    src="./images/instagram_white.svg"
+                    alt="Ícone do Instagram"
+                  />
+                  Instagram
+                </a>
               </li>
             </ul>
           </div>
